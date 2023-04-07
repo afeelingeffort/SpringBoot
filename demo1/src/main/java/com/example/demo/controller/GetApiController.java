@@ -128,12 +128,6 @@ public class GetApiController {
 		return "name " + mName;
 	}
 	
-	@GetMapping("/path-variable2-2/{name}")
-	public String pathVariable2_2() {
-		
-		return "";
-	}
-	
 	// GET 방식 
 	// http://localhost:8080/api/users/3/orders/10
 	@GetMapping("/users/{userId}/orders/{orderId}")
