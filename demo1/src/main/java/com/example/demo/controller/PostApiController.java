@@ -37,6 +37,7 @@ public class PostApiController {
 		return reqDto;
 	}
 
+	// 강사님 localhost로 했던 메세지 실습
 	// GET : 주소 : path
 	@GetMapping("/chat/{message}")
 	public String message(@PathVariable String message) {

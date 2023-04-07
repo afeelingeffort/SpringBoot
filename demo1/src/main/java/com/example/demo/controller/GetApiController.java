@@ -111,7 +111,7 @@ public class GetApiController {
 		return userDto.toString();
 	}
 	
-	//pathVariable 방식의 사용
+	// pathVariable 방식의 사용
 	// http://localhost:8080/api/path-variable/10
 	@GetMapping("/path-variable/{userId}")
 	public String pathVariable1(@PathVariable int userId) {
