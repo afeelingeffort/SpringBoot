@@ -5,7 +5,7 @@ public class MainTest1 {
 	public static void main(String[] args) {
 
 		// 중간 클래스 만들었음 !
-		String url = "www.naver.com/books/id?=100";
+		String url = "www.naver.com/books?id=100";
 
 		// IEncoder 생성자 타입 --> 의존 주입 받을 수 있도록 설계
 		// Base64Encoder는 IEncoder 타입으로 바라볼 수 있다.
