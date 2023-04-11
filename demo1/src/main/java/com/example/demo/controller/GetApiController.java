@@ -57,6 +57,7 @@ public class GetApiController {
 
 	// http://localhost:8080/api/queryParam3?name=홍아&age=10
 	// Map 방식 -> { }
+	// 걍 전부 출력해주는 듯
 	@GetMapping("/queryParam3")
 	public String queryParam3(@RequestParam Map<String, String> data) {
 

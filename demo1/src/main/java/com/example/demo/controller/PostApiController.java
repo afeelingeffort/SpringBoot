@@ -18,7 +18,7 @@ public class PostApiController {
 
 	// 클라이언트에서 어떤 값을 보낼지 이미 알고 있다. id, pw같은 거
 	// METHOD : POST
-	// 시작줄 : http://localhost:8080/api2/post1/reqData
+	// 시작줄 : http://localhost:8080/api2/post1
 	// 클라이언트에서는 json 형식으로 보낼 예정
 	@PostMapping("/post1")
 	public void post1(@RequestBody Map<String, Object> reqData) {

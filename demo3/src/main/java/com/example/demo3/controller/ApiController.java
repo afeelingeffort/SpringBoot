@@ -47,10 +47,11 @@ public class ApiController {
 	}
 
 	// put : 수정
-	// /api/put
+	// localhost:80은 생략할 수 있음.
+	// http://localhost:80/api/put
 	@PutMapping("/put")
 	public ResponseEntity<UserDTO> put(@RequestBody UserDTO dto) {
-		System.out.println(dto.toString());
+		System.out.println(dto.toString()); // 자동으로 json형식 파싱
 
 		// HTTP 메세지 코드 200 직접 세팅
 		// HTTP 메세지 body 데이터를 --> user object
@@ -72,6 +73,7 @@ public class ApiController {
 	@PutMapping("/put2")
 	public ResponseEntity<String> put2(@RequestBody UserDTO user){
 		// 정상적인 값이 들어왔는지 확인, 인증된 사용자인지 확인
+		// TEXT_PLAIN 형식 파싱처리
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.TEXT_PLAIN);
 		// 201 생성, 수정

@@ -16,7 +16,7 @@ public class PutApiController {
 	// http://localhost:8080/api/put1
 	// PUT은 body가 있음. @RequestBody
 	@PutMapping("/put1")
-	public PostRequestDto put(@RequestBody PostRequestDto req) {
+	public PutRequestDto put(@RequestBody PutRequestDto req) {
 		System.out.println("req : " + req);
 		return req;
 	}
