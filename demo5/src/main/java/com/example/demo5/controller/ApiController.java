@@ -63,15 +63,8 @@ public class ApiController {
 			StringBuilder sb = new StringBuilder();
 			
 			bindingResult.getAllErrors().forEach(error -> {
-				System.out.println(error.getCode());
-				System.out.println(error.getDefaultMessage());
-				System.out.println(error.getArguments());
-				System.out.println(error.getObjectName());
-				
-				sb.append("field : " + error.getCode());
-				sb.append("\n");
-				sb.append("message : " + error.getDefaultMessage());
-				sb.append("\n");
+				error.getCode();
+				error.getDefaultMessage();
 			});
 			// 여기는 에러 발생
 			// 필드 - 어떤 필드에서 에러 발생 ? 
