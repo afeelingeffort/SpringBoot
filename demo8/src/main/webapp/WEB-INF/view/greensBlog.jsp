@@ -21,15 +21,19 @@ body {
 }
 
 .all-wrap {
-	margin: 20px;
+	display: flex;
 	padding: 20px;
+	margin: 20px;
+	align-items: flex-start;
 }
 
 h1 {
+	margin: 20px;
 	border-top: 1px solid lightGray;
 	border-bottom: 1px solid lightGray;
 	background-color: #fff;
 	padding: 20px;
+	border-top: 1px solid lightGray;
 }
 
 table th {
@@ -37,13 +41,17 @@ table th {
 }
 
 .category-wrap {
-	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
 	width: 170px;
+	height: 300px;
 	border: 1px solid lightGray;
 	border-radius: 20px;
 	padding: 8px;
 	margin-left: 20px;
 	margin-right: 20px;
+	margin-top: 20px;
+	border: 1px solid lightGray;
 }
 
 a {
@@ -57,8 +65,13 @@ a:hover {
 
 .content-wrap {
 	display: flex;
-	flex-direction: row;
 	width: 730px;
+	flex-direction: row;
+}
+
+.article-title{
+	display: flex;
+	justify-content: space-between;
 }
 
 img {
@@ -69,8 +82,8 @@ img {
 </style>
 </head>
 <body>
+	<h1>Green's Blog</h1>
 	<div class="all-wrap">
-		<h1>Green's Blog</h1>
 		<div class="category-wrap">
 			<table>
 				<tr>
@@ -107,74 +120,77 @@ img {
 					<td><a href="#">리더쉽 (7)</a></td>
 				</tr>
 			</table>
-			<div class="right">
-				<span class="material-symbols-outlined"></span>
-				<h4>경영전략 20</h4>
-			</div>
-			<span class="material-symbols-outlined">edit_square</span>
-			<table>
-				<tr>
-					<td><img src="/image/image.png"></td>
-					<td><img src="/image/image.png"></td>
-					<td><img src="/image/image.png"></td>
-					<td><img src="/image/image.png"></td>
-				</tr>
-				<tr>
-					<td>asfdfsdafasd</td>
-					<td>asfdfsdafasd</td>
-					<td>asfdfsdafasd</td>
-					<td>asfdfsdafasd</td>
-				</tr>
-			</table>
-			<table>
-				<tr>
-					<td><img src="/image/image.png"></td>
-					<td><img src="/image/image.png"></td>
-					<td><img src="/image/image.png"></td>
-					<td><img src="/image/image.png"></td>
-				</tr>
-				<tr>
-					<td>asfdfsdafasd</td>
-					<td>asfdfsdafasd</td>
-					<td>asfdfsdafasd</td>
-					<td>asfdfsdafasd</td>
-				</tr>
-			</table>
-			<table>
-				<tr>
-					<td><img src="/image/image.png"></td>
-					<td><img src="/image/image.png"></td>
-					<td><img src="/image/image.png"></td>
-					<td><img src="/image/image.png"></td>
-				</tr>
-				<tr>
-					<td>asfdfsdafasd</td>
-					<td>asfdfsdafasd</td>
-					<td>asfdfsdafasd</td>
-					<td>asfdfsdafasd</td>
-				</tr>
-			</table>
-			<table>
-				<tr>
-					<td><img src="/image/image.png"></td>
-					<td><img src="/image/image.png"></td>
-					<td><img src="/image/image.png"></td>
-					<td><img src="/image/image.png"></td>
-				</tr>
-				<tr>
-					<td>asfdfsdafasd</td>
-					<td>asfdfsdafasd</td>
-					<td>asfdfsdafasd</td>
-					<td>asfdfsdafasd</td>
-				</tr>
-			</table>
-		</div>
 
-		<div class="content-wrap"></div>
-		<div class="page-wrap">
-			<!-- 나중에 a태그로 감싸야 되는데 flex 줘서 row해야 될 듯 -->
-			<span class="">1 2 3 4 5 6 7 8 9 10 다음 ></span>
 		</div>
+		<div class="hi">
+			<div class="article-title">
+				<span class="left">경영전략 20</span> <span
+					class="material-symbols-outlined">edit_square</span>
+			</div>
+			<div class="image-wrap">
+				<table>
+					<tr>
+						<td><img src="/image/image.png"></td>
+						<td><img src="/image/image.png"></td>
+						<td><img src="/image/image.png"></td>
+						<td><img src="/image/image.png"></td>
+					</tr>
+					<tr>
+						<td>asfdfsdafasd</td>
+						<td>asfdfsdafasd</td>
+						<td>asfdfsdafasd</td>
+						<td>asfdfsdafasd</td>
+					</tr>
+				</table>
+				<table>
+					<tr>
+						<td><img src="/image/image.png"></td>
+						<td><img src="/image/image.png"></td>
+						<td><img src="/image/image.png"></td>
+						<td><img src="/image/image.png"></td>
+					</tr>
+					<tr>
+						<td>asfdfsdafasd</td>
+						<td>asfdfsdafasd</td>
+						<td>asfdfsdafasd</td>
+						<td>asfdfsdafasd</td>
+					</tr>
+				</table>
+				<table>
+					<tr>
+						<td><img src="/image/image.png"></td>
+						<td><img src="/image/image.png"></td>
+						<td><img src="/image/image.png"></td>
+						<td><img src="/image/image.png"></td>
+					</tr>
+					<tr>
+						<td>asfdfsdafasd</td>
+						<td>asfdfsdafasd</td>
+						<td>asfdfsdafasd</td>
+						<td>asfdfsdafasd</td>
+					</tr>
+				</table>
+				<table>
+					<tr>
+						<td><img src="/image/image.png"></td>
+						<td><img src="/image/image.png"></td>
+						<td><img src="/image/image.png"></td>
+						<td><img src="/image/image.png"></td>
+					</tr>
+					<tr>
+						<td>asfdfsdafasd</td>
+						<td>asfdfsdafasd</td>
+						<td>asfdfsdafasd</td>
+						<td>asfdfsdafasd</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="page-wrap">
+		<!-- 나중에 a태그로 감싸야 되는데 flex 줘서 row해야 될 듯 -->
+		<span class="">1 2 3 4 5 6 7 8 9 10 다음 ></span>
 	</div>
 </body>
 </html>
